@@ -2,8 +2,24 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.alert-container{
+.container-wrapper {
 
+}
+
+.container-wrapper--red {
+    background-color: #f05f40;
+    color: white;
+}
+
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px; 
 }
 
 .callout-container{
@@ -13,11 +29,9 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: relative;
 }
 
@@ -38,13 +52,72 @@ body{
 
 }
 
-/*block dividers*/
+/* Page Headers */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+.quotes .page-header {
+    margin-bottom: 50px;
+}
+
+/*Block Dividers*/
 
 .block-divider {
     width: 200px;
     height: 5px;
     border: 0;
+    background-color: #444;
+}
+
+.block-divider--short {
+    width: 35px;
+}
+
+.block-divider--orange {
     background-color: #d5341f;
+}
+
+.block-divider--white {
+    background-color: white;
+}
+
+/* Content Containers */
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/* Navbar */
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: -60px;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.25);
+    z-index: 1;
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+    margin-bottom: 0;
 }
 
 /*jumbotron*/
@@ -91,4 +164,25 @@ body{
     background-color: #7c2918;
     border-color: #7c2918;
     color: white;
+}
+
+.feature {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f05f40;
 }
